@@ -4,8 +4,8 @@ import com.lambdaschool.school.model.Student;
 
 import java.util.List;
 
-public interface StudentService
-{
+public interface StudentService {
+
     List<Student> findAll();
 
     Student findStudentById(long id);

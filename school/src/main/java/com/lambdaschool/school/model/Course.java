@@ -25,58 +25,47 @@ public class Course
     @JsonIgnoreProperties("courses")
     private List<Student> students = new ArrayList<>();
 
-    public Course()
-    {
+    public Course() {
     }
 
-    public Course(String coursename)
-    {
+    public Course(String coursename) {
         this.coursename = coursename;
     }
 
-    public Course(String coursename, Instructor instructor)
-    {
+    public Course(String coursename, Instructor instructor) {
         this.coursename = coursename;
         this.instructor = instructor;
     }
 
-    public long getCourseid()
-    {
+    public long getCourseid() {
         return courseid;
     }
 
-    public void setCourseid(long courseid)
-    {
+    public void setCourseid(long courseid) {
         this.courseid = courseid;
     }
 
-    public String getCoursename()
-    {
+    public String getCoursename() {
         return coursename;
     }
 
-    public void setCoursename(String coursename)
-    {
+    public void setCoursename(String coursename) {
         this.coursename = coursename;
     }
 
-    public Instructor getInstructor()
-    {
+    public Instructor getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(Instructor instructor)
-    {
+    public void setInstructor(Instructor instructor) {
         this.instructor = instructor;
     }
 
-    public List<Student> getStudents()
-    {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students)
-    {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 }
